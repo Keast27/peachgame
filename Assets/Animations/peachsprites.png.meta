@@ -1,0 +1,1927 @@
+fileFormatVersion: 2
+guid: ea94279e7482d174c99cdfa5b0c6f13e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1832573843237666831
+    second: idle1
+  - first:
+      213: -7020291347792113057
+    second: idle2
+  - first:
+      213: -5912615286436246467
+    second: idle3
+  - first:
+      213: -8106975404823191643
+    second: peachsprites_3
+  - first:
+      213: -3954013858695563296
+    second: peachsprites_4
+  - first:
+      213: -1198424076955454698
+    second: peachsprites_5
+  - first:
+      213: 3808894253220653471
+    second: peachsprites_6
+  - first:
+      213: -3764847890338209165
+    second: peachsprites_7
+  - first:
+      213: 8332311464784095986
+    second: peachsprites_8
+  - first:
+      213: -6843359300944555084
+    second: peachsprites_9
+  - first:
+      213: 5862176806369391589
+    second: peachsprites_10
+  - first:
+      213: -3555093847568371933
+    second: peachsprites_11
+  - first:
+      213: -9149149705868138115
+    second: peachsprites_12
+  - first:
+      213: -8682772656921784147
+    second: walk1
+  - first:
+      213: -3148570804128066477
+    second: walk2
+  - first:
+      213: -1238406220472570289
+    second: walk3
+  - first:
+      213: 7015721527632280186
+    second: peachsprites_16
+  - first:
+      213: -7871789829081371590
+    second: peachsprites_17
+  - first:
+      213: 7143708311135204515
+    second: peachsprites_18
+  - first:
+      213: -3968582621472055439
+    second: peachsprites_19
+  - first:
+      213: -357938195013637189
+    second: peachsprites_20
+  - first:
+      213: 8521632447228999752
+    second: peachsprites_21
+  - first:
+      213: 1328554662325100578
+    second: peachsprites_22
+  - first:
+      213: 7580651809861241677
+    second: peachsprites_23
+  - first:
+      213: -6495823689201503484
+    second: peachsprites_24
+  - first:
+      213: -4018533894532424577
+    second: peachsprites_25
+  - first:
+      213: -5792106379684651461
+    second: peachsprites_26
+  - first:
+      213: -7808697052258251277
+    second: peachsprites_27
+  - first:
+      213: 7671211462476232699
+    second: peachsprites_28
+  - first:
+      213: 4798901545734496732
+    second: peachsprites_29
+  - first:
+      213: 4977424657530152571
+    second: peachsprites_30
+  - first:
+      213: -6216360821519484837
+    second: peachsprites_31
+  - first:
+      213: -6841445985467683113
+    second: peachsprites_32
+  - first:
+      213: -6376426275917783773
+    second: letter1
+  - first:
+      213: 4442528753093982216
+    second: peachsprites_34
+  - first:
+      213: 4109821324857704670
+    second: peachsprites_35
+  - first:
+      213: 1150071002459380414
+    second: peachsprites_36
+  - first:
+      213: -3753355404904214493
+    second: peachsprites_37
+  - first:
+      213: 8057235713534118738
+    second: peachsprites_38
+  - first:
+      213: 4723869353774049609
+    second: peachsprites_39
+  - first:
+      213: 8930109276410932633
+    second: peachsprites_40
+  - first:
+      213: 1355875041559146863
+    second: peachsprites_41
+  - first:
+      213: -3941253285672232679
+    second: peachsprites_42
+  - first:
+      213: -561945111541846320
+    second: peachsprites_43
+  - first:
+      213: 3124393415518597639
+    second: peachsprites_44
+  - first:
+      213: 2100394616868032349
+    second: peachsprites_45
+  - first:
+      213: 9154162973539866529
+    second: peachsprites_46
+  - first:
+      213: -8341689265338607991
+    second: peachsprites_47
+  - first:
+      213: 4456702402559178253
+    second: peachsprites_48
+  - first:
+      213: -2437540508612832914
+    second: peachsprites_49
+  - first:
+      213: -9130879015697594129
+    second: peachsprites_50
+  - first:
+      213: 5876425212969814706
+    second: peachsprites_51
+  - first:
+      213: 5603167673344812979
+    second: peachsprites_52
+  - first:
+      213: 3718058038621883189
+    second: peachsprites_53
+  - first:
+      213: -2269021124814540820
+    second: peachsprites_54
+  - first:
+      213: 8198420903043347335
+    second: peachsprites_55
+  - first:
+      213: -2539145309138969537
+    second: peachsprites_56
+  - first:
+      213: -8093207508095136432
+    second: peachsprites_57
+  - first:
+      213: 2165759405868746756
+    second: peachsprites_58
+  - first:
+      213: -2226526546629450578
+    second: peachsprites_59
+  - first:
+      213: -5293709271736636677
+    second: peachsprites_60
+  - first:
+      213: 6246066343335003044
+    second: peachsprites_61
+  - first:
+      213: -8348858516522492103
+    second: peachsprites_62
+  - first:
+      213: 9108898992694051936
+    second: peachsprites_63
+  - first:
+      213: -6277502820530398314
+    second: peachsprites_64
+  - first:
+      213: 2714324869486741468
+    second: peachsprites_65
+  - first:
+      213: -6088395151935915398
+    second: peachsprites_66
+  - first:
+      213: 2124023353853148305
+    second: peachsprites_67
+  - first:
+      213: -3535595409094916425
+    second: peachsprites_68
+  - first:
+      213: 3691051174887529117
+    second: peachsprites_69
+  - first:
+      213: 8514676609705035822
+    second: peachsprites_70
+  - first:
+      213: 5982248816828964903
+    second: peachsprites_71
+  - first:
+      213: -5887214776313123835
+    second: peachsprites_72
+  - first:
+      213: -30730586541018603
+    second: peachsprites_73
+  - first:
+      213: 5002497420047423667
+    second: peachsprites_74
+  - first:
+      213: 327322134504950288
+    second: peachsprites_75
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1611
+        width: 177
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33b792427fc8c1438f6e2500c39dabe
+      internalID: -1832573843237666831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1606
+        width: 173
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4509a4705959f5b47beff153d2734e4b
+      internalID: -7020291347792113057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1611
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5835bb7e28da343b69daea3cb1fb1c
+      internalID: -5912615286436246467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_3
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1612
+        width: 177
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60913b8a3170b944c9f65fcb711793d9
+      internalID: -8106975404823191643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_4
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1612
+        width: 177
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e250e64514280934e8d0450fe62ba127
+      internalID: -3954013858695563296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_5
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1608
+        width: 172
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a41059136d67484f8960044297b4314
+      internalID: -1198424076955454698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_6
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1611
+        width: 178
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea51820ef3f47f438cd1ed3087f524a
+      internalID: 3808894253220653471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_7
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1611
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b03119746f8f04885bea0d2148bfb4
+      internalID: -3764847890338209165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_8
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1611
+        width: 170
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c16baf474508ee4ba5eb4f8e41e2e78
+      internalID: 8332311464784095986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_9
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 1612
+        width: 174
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4ff700ead7f9246825b60dca60801f
+      internalID: -6843359300944555084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_10
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 1615
+        width: 188
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea47b000f6247841a9cca88f4761b27
+      internalID: 5862176806369391589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_11
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 1594
+        width: 326
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e172a698ea088a43a8f8ae85e801558
+      internalID: -3555093847568371933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_12
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 1628
+        width: 200
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7ff0aa472643343b8f48cd2fc5ac26
+      internalID: -9149149705868138115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1292
+        width: 186
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6619f04aa4d3e4e4186e5fdd4b528fab
+      internalID: -8682772656921784147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1292
+        width: 186
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af87c9d5d6bf0c47bcd046c2abb7f03
+      internalID: -3148570804128066477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk3
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1292
+        width: 186
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38686ab4ed1a9014fbb953818e7546d6
+      internalID: -1238406220472570289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_16
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1292
+        width: 177
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee87ad26e99d34b4ca64917b8f384a75
+      internalID: 7015721527632280186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_17
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1292
+        width: 177
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ed200c1394afa4dab8e7349edc0678
+      internalID: -7871789829081371590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_18
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 1292
+        width: 178
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da39a28a7c17b0b4f9bb6a0f744df8c1
+      internalID: 7143708311135204515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_19
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1291
+        width: 177
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daed06a2aac6ce44a96bf8049e86a12e
+      internalID: -3968582621472055439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_20
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1294
+        width: 185
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6ad3457e28b5b458a7b890a86a3a8c
+      internalID: -357938195013637189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_21
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1291
+        width: 177
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b457954c4310b384abf68a9796d4bc7d
+      internalID: 8521632447228999752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_22
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 1294
+        width: 185
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa15d542e3df55c4aa4517ffdfa54c2a
+      internalID: 1328554662325100578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_23
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 1294
+        width: 180
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f46a16d19753274c80ee5023e6652e7
+      internalID: 7580651809861241677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_24
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 1293
+        width: 183
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a055aaf5f3fac459919b826830a64e
+      internalID: -6495823689201503484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_25
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 1293
+        width: 183
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7281b6540d7b145b3a877806948d44
+      internalID: -4018533894532424577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_26
+      rect:
+        serializedVersion: 2
+        x: 2864
+        y: 1293
+        width: 185
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a1e58006c8556428ce941eeff366f1
+      internalID: -5792106379684651461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_27
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 972
+        width: 175
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf44db8d179e7349b83c2d235fdbff8
+      internalID: -7808697052258251277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_28
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 972
+        width: 177
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100a9b70a41135a4580b64fca261854a
+      internalID: 7671211462476232699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_29
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 972
+        width: 177
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd11127ca527ef4990fc01669692d1b
+      internalID: 4798901545734496732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_30
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 972
+        width: 177
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d08d2a3e1de2548b8dfc7c22ff6b60
+      internalID: 4977424657530152571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_31
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 965
+        width: 178
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946837c0b530bdd4495f50b6e9ba5ae8
+      internalID: -6216360821519484837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_32
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 964
+        width: 177
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1797ef606b99991469254372e1965505
+      internalID: -6841445985467683113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: letter1
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 970
+        width: 178
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78d4be6825a0b547993e1a574a82dd3
+      internalID: -6376426275917783773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_34
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 970
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9084dddc218be3644a37faf6f1d88ccc
+      internalID: 4442528753093982216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_35
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 970
+        width: 177
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf00476dca318146bb0c351f732c1d7
+      internalID: 4109821324857704670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_36
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 975
+        width: 199
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7adde8ce8269464dac01c6f5827091c
+      internalID: 1150071002459380414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_37
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 975
+        width: 206
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1e78b2c6388244db0d0a1692e562cf
+      internalID: -3753355404904214493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_38
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 975
+        width: 201
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3b49a8e43f27a4e8cd278790dee2a3
+      internalID: 8057235713534118738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_39
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 975
+        width: 211
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bce94dff29e1b4cb3233d8e4106bef
+      internalID: 4723869353774049609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_40
+      rect:
+        serializedVersion: 2
+        x: 2926
+        y: 967
+        width: 181
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6461519af818154782f04991af4c835
+      internalID: 8930109276410932633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_41
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 651
+        width: 178
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27cd43caa91a17540a9b34900a17a170
+      internalID: 1355875041559146863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_42
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 651
+        width: 177
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7347a0ebb8b68e746a4b032402d01430
+      internalID: -3941253285672232679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 651
+        width: 177
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398befc4eceb8ec49a88fdc92a3aec41
+      internalID: -561945111541846320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_44
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 651
+        width: 175
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d630bdb196183d14e965049423c8af30
+      internalID: 3124393415518597639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_45
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 651
+        width: 178
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6951dfe4c174b24ab27230d15f6b254
+      internalID: 2100394616868032349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_46
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 651
+        width: 172
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6a9b3c9db346f4ea08bdd49f38964b
+      internalID: 9154162973539866529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_47
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 651
+        width: 171
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdc1ec6d63672f4e885a12b816ffa05
+      internalID: -8341689265338607991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_48
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 656
+        width: 200
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0321cd5e122e0ac438d3ac9fc7923a1f
+      internalID: 4456702402559178253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_49
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 656
+        width: 200
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134b1185802cc384f884251fa5701053
+      internalID: -2437540508612832914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_50
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 656
+        width: 205
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f74b8983d9a8a4baa9196e7869ab6b
+      internalID: -9130879015697594129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_51
+      rect:
+        serializedVersion: 2
+        x: 2645
+        y: 656
+        width: 204
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7736a04d9859344badee444d8f3580
+      internalID: 5876425212969814706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_52
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 662
+        width: 204
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdc070ba6d152842b6f39b49efa7a94
+      internalID: 5603167673344812979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_53
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 332
+        width: 177
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2d337efab37e449aa6ba1085f62ac2
+      internalID: 3718058038621883189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_54
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 332
+        width: 175
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3579a8d06b5c446b62e0636204f30d
+      internalID: -2269021124814540820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_55
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 334
+        width: 178
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e5e3ada319aeb44bf9adf62dd1c4c1
+      internalID: 8198420903043347335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_56
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 332
+        width: 185
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df32b6b1b19157408de469ff005f4bc
+      internalID: -2539145309138969537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_57
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 331
+        width: 182
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e538cd02e482142ad7f1e163f583be
+      internalID: -8093207508095136432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_58
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 331
+        width: 187
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2679cb0900cd784189b28ca8b401ade
+      internalID: 2165759405868746756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_59
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 331
+        width: 181
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320859cabaaa849448dc243580262db6
+      internalID: -2226526546629450578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_60
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 344
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8d1ca10fcf80a4aa84b32ee0067c9f
+      internalID: -5293709271736636677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_61
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 344
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fff21dd868696c4aa207de4334f923b
+      internalID: 6246066343335003044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_62
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 343
+        width: 211
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c66732dedb09074e9723d7613374e1d
+      internalID: -8348858516522492103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_63
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 343
+        width: 189
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33c19c2d1f304f4dacdeeec51b25b2c
+      internalID: 9108898992694051936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_64
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 345
+        width: 188
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c97c7737b16cd44bbba590dd4f7a52
+      internalID: -6277502820530398314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_65
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 12
+        width: 180
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dff59827f35abf4aa00dce8080c0fce
+      internalID: 2714324869486741468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_66
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 12
+        width: 180
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5782c11776caf70499fcf8db9e7b92a4
+      internalID: -6088395151935915398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_67
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 12
+        width: 180
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d68108befe9a24580b3299752a8011
+      internalID: 2124023353853148305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_68
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 12
+        width: 180
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b08796b8015264da26e8583f17e8e7
+      internalID: -3535595409094916425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_69
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 12
+        width: 180
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22e2c379a4856e4492a38289007deaa
+      internalID: 3691051174887529117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_70
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 5
+        width: 178
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495405b2ad4238a428397ee4d0d928cc
+      internalID: 8514676609705035822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_71
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 3
+        width: 173
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fe7b63ce216314a809e539d2077e23
+      internalID: 5982248816828964903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_72
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 12
+        width: 182
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7418892ca0740746ae9b41ab89b807c
+      internalID: -5887214776313123835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_73
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 12
+        width: 185
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3145d7c18de9c724b8ee119fad5005f4
+      internalID: -30730586541018603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_74
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 12
+        width: 186
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abeefce89618f545a5c764e44bbf597
+      internalID: 5002497420047423667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peachsprites_75
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 55
+        width: 210
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6f5f75fb770b340a79b4dbab3ad13d
+      internalID: 327322134504950288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
