@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LockRotation : MonoBehaviour
+public class MoveableCharacter : MonoBehaviour
 {
+
+    
+
     // Start is called before the first frame update
     float lockPos = 0;
     public float speed; //6
@@ -16,10 +19,10 @@ public class LockRotation : MonoBehaviour
     public GameObject tile;
     public GameObject colliderCheck;
 
-    private CapsuleCollider left;
+    public CapsuleCollider left;
     public GameObject right;
-    private CapsuleCollider front;
-    private CapsuleCollider back;
+    public CapsuleCollider front;
+    public CapsuleCollider back;
 
     public bool collideTestR;
     void Start()
@@ -32,7 +35,7 @@ public class LockRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        collideTestR = right.GetComponent<CapsuleCollider>().bounds.Intersects(tile.GetComponent<BoxCollider>().bounds);
+        collideTestR = right.GetComponent<Ccheck>().isColliding;
 
        // if (!moveInput) gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
         UpdatePos();
@@ -43,49 +46,53 @@ public class LockRotation : MonoBehaviour
 
     void UpdatePos()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && front.GetComponent<Ccheck>().isColliding)
         {
            
             moveInput = true;
             Debug.Log("W pressed" + moveInput);
             Vector3 Movement = -new Vector3(0, Input.GetAxis("Vertical") * Mathf.Cos(angle) * vSpeed, Input.GetAxis("Vertical") * Mathf.Sin(angle) * vSpeed);
-            transform.position += Movement * speed * Time.deltaTime;
+            transform.position += Movement * speed/2 *  Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S) && back.GetComponent<Ccheck>().isColliding)
         {
             Debug.Log("S pressed");
             moveInput = true;
             Vector3 Movement = -new Vector3(0, Input.GetAxis("Vertical") * Mathf.Cos(angle) * vSpeed, Input.GetAxis("Vertical") * Mathf.Sin(angle) * vSpeed);
-            transform.position += Movement * speed * Time.deltaTime;
+            transform.position += Movement * speed/2 * Time.deltaTime;
         }
 
-        // Vertical movement actually moves at an angle to stay ontop of the grid
+        // Vertical movement moves at an angle to stay ontop of the grid
 
 
-        if (Input.GetKey(KeyCode.D) && collideTestR)
+        if (Input.GetKey(KeyCode.D) && right.GetComponent<Ccheck>().isColliding )
         {
             Debug.Log("D pressed");
             moveInput = true;
             Vector3 Movement = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
             transform.position += Movement * speed * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && left.GetComponent<Ccheck>().isColliding)
         {
             Debug.Log("A pressed");
             moveInput = true;
             Vector3 Movement = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
             transform.position += Movement * speed * Time.deltaTime;
         }
-        
-        if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) &&
-            !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D)) moveInput = false;
 
-     
-        Debug.Log("Nothing pressed " + moveInput);
-        //rb.constraints = RigidbodyConstraints.FreezePosition;
-        //Commented out for debugging reasons, will remain commented until colliderCheck is done
-        rb.constraints = RigidbodyConstraints.FreezePositionZ;
+        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) &&
+            !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+        {
+            moveInput = false;
 
+
+
+            Debug.Log("Nothing pressed, move input: " + moveInput);
+            //rb.constraints = RigidbodyConstraints.FreezePosition;
+            //Commented out for debugging reasons, will remain commented until colliderCheck is done
+            // rb.constraints = RigidbodyConstraints.FreezePositionZ;
+
+        }
     }
 
     void UpdateAnim()
