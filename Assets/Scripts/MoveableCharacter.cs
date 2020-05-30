@@ -46,7 +46,7 @@ public class MoveableCharacter : MonoBehaviour
 
     void UpdatePos()
     {
-        if (Input.GetKey(KeyCode.W) && front.GetComponent<Ccheck>().isColliding)
+        if (Input.GetKey(KeyCode.W) && back.GetComponent<Ccheck>().isColliding)
         {
            
             moveInput = true;
@@ -54,7 +54,7 @@ public class MoveableCharacter : MonoBehaviour
             Vector3 Movement = -new Vector3(0, Input.GetAxis("Vertical") * Mathf.Cos(angle) * vSpeed, Input.GetAxis("Vertical") * Mathf.Sin(angle) * vSpeed);
             transform.position += Movement * speed/2 *  Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.S) && back.GetComponent<Ccheck>().isColliding)
+        else if (Input.GetKey(KeyCode.S) && front.GetComponent<Ccheck>().isColliding)
         {
             Debug.Log("S pressed");
             moveInput = true;

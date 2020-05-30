@@ -64,8 +64,10 @@
   <ItemGroup>
     <Compile Include="Assets\isWalking.cs" />
     <Compile Include="Assets\Scripts\Ccheck.cs" />
+    <Compile Include="Assets\Scripts\GraphManager.cs" />
     <Compile Include="Assets\Scripts\GridSize.cs" />
     <Compile Include="Assets\Scripts\MoveableCharacter.cs" />
+    <Compile Include="Assets\Scripts\Tile.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/keast/Documents/GitHub/peachgame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
