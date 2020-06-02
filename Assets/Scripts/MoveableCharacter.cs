@@ -95,8 +95,23 @@ public class MoveableCharacter : MonoBehaviour
         }
     }
 
+
+    //Exalt is just a rip off of Awake()
+
+
     void UpdateAnim()
     {
       anim.SetBool("isWalking", moveInput);
+    }
+
+    public bool CheckCoverage()
+    {
+        int check = 0;
+       if(right.GetComponent<Ccheck>().isColliding)
+        {
+            check++;
+        }
+
+        return true;
     }
 }

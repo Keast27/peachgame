@@ -23,7 +23,6 @@ public class GridSize : MonoBehaviour
     private int currY;
     private int speed;
     public Tile start;
-    private string spriteNames = "Assets/Grid/tile";
     public Sprite[] sprites;
     
     void Start()
@@ -57,9 +56,8 @@ public class GridSize : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
-
    
 
     private void ResetGrid()
@@ -74,8 +72,6 @@ public class GridSize : MonoBehaviour
             }
         }
     }
-
-
 
     private void SetNeighbors(int rows, int col)
     {
@@ -127,7 +123,6 @@ public class GridSize : MonoBehaviour
         currY = startYTile;
     }
 
-
     public void PlaceEnemy(int x, int y)
     {
         tiles[x, y].GetComponent<Tile>().walkable = false;
@@ -141,7 +136,7 @@ public class GridSize : MonoBehaviour
         currY = startYTile;
     }
 
-    private bool CheckIndex(int x, int y)
+    public bool CheckIndex(int x, int y)
     {
         if (x < tiles.GetLength(0) && y < tiles.GetLength(0) && !(x < 0) && !(y < 0))
         {
@@ -150,22 +145,6 @@ public class GridSize : MonoBehaviour
         return false;
     }
 
-    private Vector2 FindIndex(GameObject currentTile)
-    {
-      
-        Vector2 index = new Vector2(0, 0);
-        for (int i = 0; i < rows; i++)
-        {
-            for (int j = 0; j < col; j++)
-            {
-                if(tiles[i, j] = currentTile)
-                {
-                    index = new Vector2(i, j);
-                }
-            }
-        }   
-        return index;
-    }
 
     public void FillGraph()
     {
