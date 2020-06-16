@@ -18,10 +18,11 @@ public class PeachMoves : Player
         
     }
 
-    public override void MoveOne()
+    public override void MoveOne(Vector2 currLoc)
     {       
         Debug.Log("It works!");
 
+        tiles[(int)currLoc.x, (int) currLoc.y + 1].GetComponent<SpriteRenderer>().color = Color.black;
         
         
     }

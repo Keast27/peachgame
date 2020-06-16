@@ -14,8 +14,10 @@ public class GridSize : MonoBehaviour
     public GameObject tile;
     public GameObject Moving;
     public List<GameObject> walkTiles = new List<GameObject>();
-    private GameObject[,] tiles;
+    public GameObject[,] tiles;
 
+
+    
    //Variables from Graph test
     public int startXTile;
     public int startYTile;
@@ -24,13 +26,17 @@ public class GridSize : MonoBehaviour
     private int speed;
     public Tile start;
     public Sprite[] sprites;
-    
+
+    public Vector2 standingTilePos;
+
+    public GameObject standing;
+        
     void Start()
     {
        // sprites = Resources.LoadAll<Sprite>(spriteNames);
         tiles = new GameObject[rows, col];
-
-        for(int i = 0; i < rows; i++)
+       
+        for (int i = 0; i < rows; i++)
         {
             float beginX = startX;
 
@@ -48,6 +54,7 @@ public class GridSize : MonoBehaviour
             beginX = 0;
         }
 
+       
         SetNeighbors(rows, col);
         SetStartLocnSpd(startXTile, startYTile, 4);
         FillGraph();
@@ -56,9 +63,15 @@ public class GridSize : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        foreach(GameObject t in tiles)
+        {
+           if(t.GetComponent<Tile>().ActiveTile == true)
+            {
+                standing = t;
+            }            
+        }
        
-    }
-   
+    }   
 
     private void ResetGrid()
     {
@@ -71,8 +84,14 @@ public class GridSize : MonoBehaviour
 
             }
         }
+
+        if(walkTiles.Count != 0)
+        {
+            walkTiles.Clear();
+        }
     }
 
+    //Assigns neighbors in grid
     private void SetNeighbors(int rows, int col)
     {
         //  tiles = new Tile[rows, col];
@@ -123,6 +142,7 @@ public class GridSize : MonoBehaviour
         currY = startYTile;
     }
 
+    //Not implemented yet
     public void PlaceEnemy(int x, int y)
     {
         tiles[x, y].GetComponent<Tile>().walkable = false;
@@ -136,6 +156,7 @@ public class GridSize : MonoBehaviour
         currY = startYTile;
     }
 
+    //Checks if index is valid
     public bool CheckIndex(int x, int y)
     {
         if (x < tiles.GetLength(0) && y < tiles.GetLength(0) && !(x < 0) && !(y < 0))
@@ -173,9 +194,7 @@ public class GridSize : MonoBehaviour
                         {
                             if (tiles[currX + i, currY].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX + i, currY].tag = "Walk Tile";
-                                tiles[currX + i, currY].GetComponent<Tile>().walkable = true;           
-                                tiles[currX + i, currY].GetComponent<SpriteRenderer>().sprite = sprites[1];
+                              SetTileWalk(tiles[currX + i, currY]);
                             }
                         }
 
@@ -189,9 +208,7 @@ public class GridSize : MonoBehaviour
 
                             if (tiles[currX - i, currY].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX - i, currY].tag = "Walk Tile";
-                                tiles[currX - i, currY].GetComponent<Tile>().walkable = true; 
-                                tiles[currX - i, currY].GetComponent<SpriteRenderer>().sprite = sprites[1]; 
+                                SetTileWalk(tiles[currX - i, currY]);
                             }
 
                         }
@@ -219,9 +236,7 @@ public class GridSize : MonoBehaviour
                         {
                             if (tiles[currX + i, currY].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX + i, currY].tag = "Walk Tile";
-                                tiles[currX + i, currY].GetComponent<Tile>().walkable = true;
-                                tiles[currX + i, currY].GetComponent<SpriteRenderer>().sprite = sprites[1]; 
+                                SetTileWalk(tiles[currX + i, currY]);
                             }
                         }
                     }
@@ -232,9 +247,7 @@ public class GridSize : MonoBehaviour
                         {
                             if (tiles[currX - i, currY].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX - i, currY].tag = "Walk Tile";
-                                tiles[currX - i, currY].GetComponent<Tile>().walkable = true;
-                                tiles[currX - i, currY].GetComponent<SpriteRenderer>().sprite = sprites[1]; 
+                              SetTileWalk(tiles[currX - i, currY]);
                             }
                         }
 
@@ -260,9 +273,7 @@ public class GridSize : MonoBehaviour
                         {
                             if (tiles[currX, currY + i].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX, currY + i].tag = "Walk Tile";
-                                tiles[currX, currY + i].GetComponent<Tile>().walkable = true;
-                                tiles[currX, currY + i].GetComponent<SpriteRenderer>().sprite = sprites[1]; 
+                               SetTileWalk(tiles[currX, currY + i]);
                             }
                         }
                     }
@@ -273,9 +284,7 @@ public class GridSize : MonoBehaviour
                         {
                             if (tiles[currX, currY - i].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX, currY - i].tag = "Walk Tile";
-                                tiles[currX, currY - i].GetComponent<Tile>().walkable = true;
-                                tiles[currX, currY - i].GetComponent<SpriteRenderer>().sprite = sprites[1];
+                                SetTileWalk(tiles[currX, currY - i]);
                             }
                         }
 
@@ -302,9 +311,7 @@ public class GridSize : MonoBehaviour
                         {
                             if (tiles[currX, currY + i].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX, currY + i].tag = "Walk Tile";
-                                tiles[currX, currY + i].GetComponent<Tile>().walkable = true;
-                                tiles[currX, currY + i].GetComponent<SpriteRenderer>().sprite = sprites[1]; 
+                                SetTileWalk(tiles[currX, currY + i]);
                             }
                         }
                     }
@@ -315,9 +322,7 @@ public class GridSize : MonoBehaviour
                         {
                             if (tiles[currX, currY - i].GetComponent<Tile>().isEnemy == false)
                             {
-                                tiles[currX, currY - i].tag = "Walk Tile";
-                                tiles[currX, currY - i].GetComponent<Tile>().walkable = true;
-                                tiles[currX, currY - i].GetComponent<SpriteRenderer>().sprite = sprites[1];
+                                SetTileWalk(tiles[currX, currY - i]);                               
                             }
 
                         }
@@ -336,4 +341,28 @@ public class GridSize : MonoBehaviour
     }
 
 
+    //Helper method that sets the walkable tile's properties
+    public void SetTileWalk(GameObject tile)
+    {
+        tile.tag = "Walk Tile";
+        tile.GetComponent<Tile>().walkable = true;
+        walkTiles.Add(tile);
+        tile.GetComponent<SpriteRenderer>().sprite = sprites[1];
+    }
+
+    private void standingIndex()
+    {
+        for(int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < col; j++)
+            {
+                if(standing == tiles[i, j])
+                {
+                    standingTilePos = new Vector2(i, j);
+                }
+            }
+        }
+    }
 }
+
+ 

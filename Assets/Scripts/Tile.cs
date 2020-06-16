@@ -11,6 +11,11 @@ public class Tile : MonoBehaviour
     protected Tile down;
     protected Tile left;
     protected Tile right;
+    public bool ActiveTile = false;
+
+    public int priority;
+
+    private GameObject tile;
 
     public Tile Up
     {
@@ -73,5 +78,45 @@ public class Tile : MonoBehaviour
             }
 
         }
+    }
+
+   
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Collide")
+        {
+            priority++;
+        }
+      
+    }
+
+   
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Collide")
+        {
+            priority--;
+        }
+    }
+
+    public void Update()
+    {
+        if(walkable == true)
+        {
+            if (priority == 5)
+            {
+                ActiveTile = true;
+                GetComponent<SpriteRenderer>().color = Color.magenta; 
+            }
+            else
+            {
+                ActiveTile = false;
+                GetComponent<SpriteRenderer>().color = Color.white;
+               
+            }
+        }
+        
     }
 }

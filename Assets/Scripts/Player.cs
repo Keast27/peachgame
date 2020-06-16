@@ -4,58 +4,56 @@ using UnityEngine;
 
 public class Player 
 {
-    // Start is called before the first frame update
-    public List<GameObject> walkTiles = new List<GameObject>();
+    // Start is called before the first frame update    
+    public GameObject[,] tiles;
     public GameObject grid;
-    Tile CurrentTile;
-    Tile StartingTile;
+    GameObject CurrentTile;
+    GameObject StartingTile;
+
 
     void Start()
     {
-        walkTiles = grid.GetComponent<GridSize>().walkTiles;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        tiles = grid.GetComponent<GridSize>().tiles;
     }
 
-    public virtual void MoveOne()
+    public virtual void MoveOne(Vector2 currLoc)
     {
        
     }
 
-    public virtual void MoveTwo()
+    public virtual void MoveTwo(Vector2 currLoc)
     {
 
     }
 
-    public virtual void MoveThree()
+    public virtual void MoveThree(Vector2 currLoc)
     {
 
     }
 
-    public void CallMove(int moveNum)
+    public void CallMove(int moveNum, Vector2 currLoc)
     {
         if(moveNum == 1)
         {
-            MoveOne();
+            MoveOne(currLoc);
         }
         if (moveNum == 2)
         {
-            MoveOne();
+            MoveTwo(currLoc);
         }
         if (moveNum == 3)
         {
-            MoveOne();
+            MoveThree(currLoc);
         }
     }
 
-    public void GetStandingTile()
-    {
-       
-    }
+   
 
     public bool CheckTile(int x, int y)
     {

@@ -20,18 +20,28 @@ public class TurnManager : MonoBehaviour
     public CurrentTurn currentTurn;
 
     private PeachMoves peach = new PeachMoves();
+
+    
+    private Vector2 standing;
+
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(TurnOrder.Count);
+        
+        Debug.Log("TurnOrder Count:" + TurnOrder.Count);
         currentChara = TurnOrder[0];
     }
 
     // Update is called once per frame
     void Update()
     {
+        standing = GetComponent<GridSize>().standingTilePos;
+        //Need to make sure you highlight before submitting the attack
         switch (currentTurn) {
             case CurrentTurn.Hero:
+
+                GetLoc(currentChara);
+
                 if (Input.GetKey(KeyCode.I))
                 {
                     //Check tag to see if it is hero
@@ -47,7 +57,7 @@ public class TurnManager : MonoBehaviour
                 }
                 if (Input.GetKey(KeyCode.Space) && move!=0)
                 {
-                   GetMove(currentChara);
+                   GetMove(currentChara);                 
                     SetTurn();
                 }
                 break;
@@ -63,6 +73,8 @@ public class TurnManager : MonoBehaviour
 
     }
 
+   
+
     private void SetTurn()
     {
         //Turn tracker
@@ -72,9 +84,12 @@ public class TurnManager : MonoBehaviour
             turn = 0;
         }
 
+        currentChara = TurnOrder[turn];
+        SetStart(currentChara);
+
         if(TurnOrder[turn].tag == "Player")
         {
-            currentTurn = CurrentTurn.Hero;
+            currentTurn = CurrentTurn.Hero;            
         }
 
         if (TurnOrder[turn].tag == "Enemy")
@@ -91,7 +106,7 @@ public class TurnManager : MonoBehaviour
     {
        if(currentPlayer.name == "Peach")
         {
-            peach.CallMove(move);
+            peach.CallMove(move, standing);
         }
         if (currentPlayer.name == "Mario?")
         {
@@ -106,6 +121,47 @@ public class TurnManager : MonoBehaviour
 
         }
     }
+
+    private void GetLoc(GameObject currentPlayer)
+    {
+        if (currentPlayer.name == "Peach")
+        {
+           
+        }
+        if (currentPlayer.name == "Mario?")
+        {
+
+        }
+        if (currentPlayer.name == "Luigi??")
+        {
+
+        }
+        if (currentPlayer.name == "Bowser?????")
+        {
+
+        }
+    }
+
+    private void SetStart(GameObject currentPlayer)
+    {
+        if (currentPlayer.name == "Peach")
+        {
+          
+        }
+        if (currentPlayer.name == "Mario?")
+        {
+
+        }
+        if (currentPlayer.name == "Luigi??")
+        {
+
+        }
+        if (currentPlayer.name == "Bowser?????")
+        {
+
+        }
+    }
+
     private void OnGUI()
     {
         if (Input.GetKey(KeyCode.KeypadEnter))

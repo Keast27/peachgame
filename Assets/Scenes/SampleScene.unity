@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 377995783}
   m_Layer: 0
   m_Name: FrontCollide
-  m_TagString: Untagged
+  m_TagString: Collide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1934,7 +1934,7 @@ GameObject:
   - component: {fileID: 1275668574}
   m_Layer: 0
   m_Name: BackCollide
-  m_TagString: Untagged
+  m_TagString: Collide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2226,7 +2226,7 @@ GameObject:
   - component: {fileID: 1376570670}
   m_Layer: 0
   m_Name: CenterCollide
-  m_TagString: Untagged
+  m_TagString: Collide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2316,6 +2316,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 3227744850572508098, guid: 469827dde68276d4997993b922c25a4d, type: 3}
   - {fileID: 4675946122492920207, guid: 469827dde68276d4997993b922c25a4d, type: 3}
+  standing: {fileID: 0}
 --- !u!4 &1482116795
 Transform:
   m_ObjectHideFlags: 0
@@ -2720,7 +2721,7 @@ GameObject:
   - component: {fileID: 1670569224}
   m_Layer: 0
   m_Name: LeftCollide
-  m_TagString: Untagged
+  m_TagString: Collide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3153,7 +3154,7 @@ GameObject:
   - component: {fileID: 2133006107}
   m_Layer: 0
   m_Name: RightCollide
-  m_TagString: Untagged
+  m_TagString: Collide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Walk Tile
+  - Collide
   layers:
   - Default
   - TransparentFX
