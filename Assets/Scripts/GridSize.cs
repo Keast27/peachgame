@@ -16,24 +16,27 @@ public class GridSize : MonoBehaviour
     public List<GameObject> walkTiles = new List<GameObject>();
     public GameObject[,] tiles;
 
+    public GameObject TM;
+    //Turn manager
 
-    
-   //Variables from Graph test
+    public int CharaMovementSpd;
+
+    //Variables from Graph test
     public int startXTile;
     public int startYTile;
     private int currX;
     private int currY;
     private int speed;
     public Tile start;
-    public Sprite[] sprites;
-
+   
     public Vector2 standingTilePos;
 
     public GameObject standing;
         
     void Start()
     {
-       // sprites = Resources.LoadAll<Sprite>(spriteNames);
+        standingTilePos = Vector2.zero;
+      
         tiles = new GameObject[rows, col];
        
         for (int i = 0; i < rows; i++)
@@ -53,24 +56,25 @@ public class GridSize : MonoBehaviour
             startZ -= tile.GetComponent<SpriteRenderer>().bounds.size.z * (Mathf.Cos(theta * Mathf.Deg2Rad));
             beginX = 0;
         }
-
        
         SetNeighbors(rows, col);
-        SetStartLocnSpd(startXTile, startYTile, 4);
+        SetStartLocnSpd(startXTile, startYTile, CharaMovementSpd);
         FillGraph();
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {        
         foreach(GameObject t in tiles)
         {
            if(t.GetComponent<Tile>().ActiveTile == true)
             {
                 standing = t;
+                standingIndex();
             }            
         }
        
+
     }   
 
     private void ResetGrid()
@@ -136,8 +140,7 @@ public class GridSize : MonoBehaviour
         speed = spd;
         start = tiles[startXTile, startYTile].GetComponent<Tile>();
         start.tag = "Walk Tile";
-        start.GetComponent<Tile>().walkable = true;
-        start.GetComponent<SpriteRenderer>().sprite = sprites[1];
+        start.GetComponent<Tile>().walkable = true;      
         currX = startXTile;
         currY = startYTile;
     }
@@ -346,10 +349,10 @@ public class GridSize : MonoBehaviour
     {
         tile.tag = "Walk Tile";
         tile.GetComponent<Tile>().walkable = true;
-        walkTiles.Add(tile);
-        tile.GetComponent<SpriteRenderer>().sprite = sprites[1];
+        walkTiles.Add(tile);        
     }
 
+    //Sets the standing index
     private void standingIndex()
     {
         for(int i = 0; i < rows; i++)
@@ -359,6 +362,7 @@ public class GridSize : MonoBehaviour
                 if(standing == tiles[i, j])
                 {
                     standingTilePos = new Vector2(i, j);
+                    TM.GetComponent<TurnManager>().PlayerStanding = standingTilePos;
                 }
             }
         }

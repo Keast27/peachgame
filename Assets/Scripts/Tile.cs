@@ -12,6 +12,15 @@ public class Tile : MonoBehaviour
     protected Tile left;
     protected Tile right;
     public bool ActiveTile = false;
+    private bool alreadyActive = false;
+    public bool isPreview;
+    public bool isAttack;
+
+
+    public Sprite[] sprites;
+
+
+
 
     public int priority;
 
@@ -84,7 +93,8 @@ public class Tile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Collide")
+        UpdateTiles();
+        if (other.tag == "Collide")
         {
             priority++;
         }
@@ -101,22 +111,60 @@ public class Tile : MonoBehaviour
         }
     }
 
-    public void Update()
+
+    private void UpdateTiles()
     {
-        if(walkable == true)
+        //make this better
+        if (walkable == true)
         {
-            if (priority == 5)
+            GetComponent<SpriteRenderer>().sprite = sprites[1];
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = sprites[0];
+        }
+
+
+        if (walkable == true && priority == 5)
+        {
+            ActiveTile = true;
+            GetComponent<SpriteRenderer>().color = Color.magenta;
+        }
+        else if ((walkable == true || walkable == false) && priority != 5)
+        {
+            ActiveTile = false;
+            if (isPreview == true)
             {
-                ActiveTile = true;
-                GetComponent<SpriteRenderer>().color = Color.magenta; 
+                GetComponent<SpriteRenderer>().sprite = sprites[1];
+                GetComponent<SpriteRenderer>().color = Color.black;
             }
             else
             {
-                ActiveTile = false;
                 GetComponent<SpriteRenderer>().color = Color.white;
-               
             }
+
         }
-        
+    }
+
+
+    public void Start()
+    {
+        UpdateTiles();
+
+    }
+
+    public void Update()
+    {
+
+      /*  
+        if((alreadyActive == false) && (ActiveTile == true))
+        {
+            UpdateTiles();
+
+        }
+
+        alreadyActive = ActiveTile;
+        */
+        UpdateTiles();
     }
 }

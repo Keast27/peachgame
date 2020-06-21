@@ -104,6 +104,7 @@ public class MoveableCharacter : MonoBehaviour
       anim.SetBool("isWalking", moveInput);
     }
 
+    //Make sure you can delete this
     public bool CheckCoverage()
     {
         int check = 0;

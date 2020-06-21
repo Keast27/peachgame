@@ -112,6 +112,12 @@ MonoBehaviour:
   walkable: 0
   isEnemy: 0
   neighbors: []
+  ActiveTile: 0
+  isPreview: 0
+  isAttack: 0
+  sprites:
+  - {fileID: 3227744850572508098, guid: 469827dde68276d4997993b922c25a4d, type: 3}
+  - {fileID: 4675946122492920207, guid: 469827dde68276d4997993b922c25a4d, type: 3}
   priority: 0
 --- !u!54 &1477630760047656959
 Rigidbody:

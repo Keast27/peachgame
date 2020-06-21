@@ -22,9 +22,40 @@ public class PeachMoves : Player
     {       
         Debug.Log("It works!");
 
-        tiles[(int)currLoc.x, (int) currLoc.y + 1].GetComponent<SpriteRenderer>().color = Color.black;
         
         
     }
-
+    public override void PreviewMove(int moveNum, Vector2 currLoc, GameObject[,] tiles)
+    {
+        for (int i = 0; i < tiles.GetLength(0); i++)
+        {
+            for (int j = 0; j < tiles.GetLength(1); j++)
+            {
+                tiles[i, j].GetComponent<Tile>().isPreview = false;
+            }
+        }
+        if (moveNum == 1)
+        {
+            if (CheckTile((int)currLoc.x, (int)currLoc.y, tiles))
+            {
+                tiles[(int)currLoc.x, (int)currLoc.y + 1].GetComponent<Tile>().isPreview = true;
+                if (CheckTile((int)currLoc.x + 1, (int)currLoc.y + 1, tiles))
+                {
+                    tiles[(int)currLoc.x + 1, (int)currLoc.y + 1].GetComponent<Tile>().isPreview = true;
+                }
+                if (CheckTile((int)currLoc.x - 1, (int)currLoc.y + 1, tiles))
+                {
+                    tiles[(int)currLoc.x - 1, (int)currLoc.y + 1].GetComponent<Tile>().isPreview = true;
+                }
+            }
+            //theory: x and y are switched
+        }
+        else if (moveNum == 2)
+        {
+            if (CheckTile((int)currLoc.x, (int)currLoc.y, tiles))
+            {
+                tiles[(int)currLoc.x, (int)currLoc.y + 1].GetComponent<Tile>().isPreview = true;
+            }
+        }
+    }
 }

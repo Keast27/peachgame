@@ -10,7 +10,14 @@ public class TurnManager : MonoBehaviour
         Enem,
         Boss,
     }
-   
+
+
+    //Gets the grid game object
+    public GameObject grid;
+    //The tile array goes here
+    private GameObject[,] tiles;
+
+    //Keeps track of the enemy vs hero pattern
     public List<GameObject> TurnOrder = new List<GameObject>();
     int turn = 0;
     int move = 0;
@@ -22,12 +29,12 @@ public class TurnManager : MonoBehaviour
     private PeachMoves peach = new PeachMoves();
 
     
-    private Vector2 standing;
+    public Vector2 PlayerStanding;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        tiles = grid.GetComponent<GridSize>().tiles;
         Debug.Log("TurnOrder Count:" + TurnOrder.Count);
         currentChara = TurnOrder[0];
     }
@@ -35,13 +42,12 @@ public class TurnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        standing = GetComponent<GridSize>().standingTilePos;
+        //tiles = grid.GetComponent<GridSize>().tiles;
+        GetPreview(currentChara, PlayerStanding, move);
         //Need to make sure you highlight before submitting the attack
         switch (currentTurn) {
             case CurrentTurn.Hero:
-
-                GetLoc(currentChara);
-
+                GetPreview(currentChara, PlayerStanding, move);
                 if (Input.GetKey(KeyCode.I))
                 {
                     //Check tag to see if it is hero
@@ -86,7 +92,7 @@ public class TurnManager : MonoBehaviour
 
         currentChara = TurnOrder[turn];
         SetStart(currentChara);
-
+        move = 0;
         if(TurnOrder[turn].tag == "Player")
         {
             currentTurn = CurrentTurn.Hero;            
@@ -106,7 +112,8 @@ public class TurnManager : MonoBehaviour
     {
        if(currentPlayer.name == "Peach")
         {
-            peach.CallMove(move, standing);
+            peach.CallMove(move, PlayerStanding);
+            
         }
         if (currentPlayer.name == "Mario?")
         {
@@ -122,11 +129,11 @@ public class TurnManager : MonoBehaviour
         }
     }
 
-    private void GetLoc(GameObject currentPlayer)
+    private void GetPreview(GameObject currentPlayer, Vector2 currLoc, int moveNum)
     {
         if (currentPlayer.name == "Peach")
         {
-           
+            peach.PreviewMove(moveNum, currLoc, tiles);
         }
         if (currentPlayer.name == "Mario?")
         {
@@ -141,6 +148,8 @@ public class TurnManager : MonoBehaviour
 
         }
     }
+
+
 
     private void SetStart(GameObject currentPlayer)
     {

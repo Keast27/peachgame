@@ -2310,12 +2310,12 @@ MonoBehaviour:
   tile: {fileID: 1234879696180365669, guid: b8c35a7154c0c0a4c89d895c15e3dd59, type: 3}
   Moving: {fileID: 1655987679}
   walkTiles: []
+  TM: {fileID: 1928726946}
+  CharaMovementSpd: 4
   startXTile: 1
   startYTile: 0
   start: {fileID: 0}
-  sprites:
-  - {fileID: 3227744850572508098, guid: 469827dde68276d4997993b922c25a4d, type: 3}
-  - {fileID: 4675946122492920207, guid: 469827dde68276d4997993b922c25a4d, type: 3}
+  standingTilePos: {x: 0, y: 0}
   standing: {fileID: 0}
 --- !u!4 &1482116795
 Transform:
@@ -2885,9 +2885,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8ed7eb3fae2a44087d1a13cb545829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grid: {fileID: 1482116793}
   TurnOrder:
   - {fileID: 1655987679}
   currentTurn: 0
+  PlayerStanding: {x: 0, y: 0}
 --- !u!4 &1928726948
 Transform:
   m_ObjectHideFlags: 0

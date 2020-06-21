@@ -5,11 +5,11 @@ using UnityEngine;
 public class Player 
 {
     // Start is called before the first frame update    
-    public GameObject[,] tiles;
-    public GameObject grid;
+    //public GameObject[,] tiles;
     GameObject CurrentTile;
     GameObject StartingTile;
 
+   
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class Player
     // Update is called once per frame
     void Update()
     {
-        tiles = grid.GetComponent<GridSize>().tiles;
+      
     }
 
     public virtual void MoveOne(Vector2 currLoc)
@@ -53,10 +53,28 @@ public class Player
         }
     }
 
-   
-
-    public bool CheckTile(int x, int y)
+    public virtual void PreviewMove(int moveNum, Vector2 currLoc, GameObject[,] tiles)
     {
-        return grid.GetComponent<GridSize>().CheckIndex(x, y);
+        if (moveNum == 1)
+        {
+        }
+        if (moveNum == 2)
+        {
+            
+        }
+        if (moveNum == 3)
+        {
+            
+        }
+    }
+
+    public bool CheckTile(int x, int y, GameObject[,] tiles)
+    {
+
+        if (x < tiles.GetLength(0) && y < tiles.GetLength(0) && !(x < 0) && !(y < 0))
+        {
+            return true;
+        }
+        return false;    
     }
 }
